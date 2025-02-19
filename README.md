@@ -61,12 +61,12 @@ IntPtr hWnd = CreateWindowEx(
     0,                                // 扩展样式
     "static",                         // 预定义的窗口类，更多自定义需注册窗口类
     "",                               // 窗口标题
-    WS_OVERLAPPEDWINDOW | WS_VISIBLE, // 窗口样式
+    WS_CHILD | WS_VISIBLE,            // 窗口样式
     100,                              // X 坐标
     100,                              // Y 坐标
     800,                              // 宽度
     600,                              // 高度
-    IntPtr.Zero,                      // 父窗口句柄
+    containerHwnd,                    // 父窗口句柄
     IntPtr.Zero,                      // 菜单句柄
     GetModuleHandle(null!),           // 实例句柄
     IntPtr.Zero);                     // 创建参数

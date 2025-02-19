@@ -23,7 +23,6 @@
 
         <WrapPanel Grid.ColumnSpan="2" Name="UserInput">
             <TextBox
-                Text="hcmt-tps"
                 Width="200"
                 Name="Input" />
             <Button
